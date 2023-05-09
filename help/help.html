@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="icon.png" href="icon.png">
+  <title>Manual de l'aplicació</title>
+  <style>
+    body {
+      background-color: #222831;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    header {
+      background-color: #393E46;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .logo {
+      position: absolute;
+      margin-left: 10px;
+    }
+    
+    .logo img {
+      height: 55px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+    }
+    
+    nav ul li {
+      margin-right: 10px;
+    }
+
+    p {
+      color: #ffffff;
+    }
+    
+    nav ul a {
+      cursor: pointer;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #00adb5;
+      transition: background-color 0.3s ease;
+      margin: 5px;
+    }
+    
+    nav ul a:hover {
+      background-color: #eeeeee;
+      color: #222831;
+    }
+    
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    section {
+      margin-bottom: 40px;
+    }
+  </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          const links = document.querySelectorAll('.menu a');
+          const divs = document.querySelectorAll('.contingut section');
+          const showAllLink = document.querySelector('.menu .mostrar-tot');
+  
+          links.forEach((link, index) => {
+              link.addEventListener('click', () => {
+                  divs.forEach(div => div.style.display = 'none');
+                  divs[index-1].style.display = 'block';
+              });
+          });
+  
+          showAllLink.addEventListener('click', () => {
+              divs.forEach(div => div.style.display = 'block');
+          });
+      });
+    </script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="icon.png" alt="Icono de la aplicación">
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a class="mostrar-tot">Mostrar-ho tot</a></li>
+        <li><a>Introducció</a></li>
+        <li><a>Llibres</a></li>
+        <li><a>Clients</a></li>
+        <li><a>Vendes</a></li>
+        <li><a>Consulta</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contingut">
+
+    <section id="intro">
+      <h2>Introducció</h2>
+      <h3>Benvingut!</h3>
+      <p>Benvingut a la documentació de l'aplicació de gestió de llibres i clients! Aquesta aplicació està dissenyada per proporcionar una solució eficient per a la gestió de dades relacionades amb llibres, clients i vendes.</p>
+      <p>Amb aquesta aplicació, podràs realitzar tasques com donar d'alta, donar de baixa i modificar llibres i clients, així com crear i consultar vendes.</p>
+      <img src="General.PNG" alt="Pantalla inicial" width="850" height="300">
+      <p></p>
+      <hr size="5px" color="white" />
+      <p></p>
+    </section>
+    <section id="llibres">
+      <h2>Llibres</h2>
+      <p>En aquesta secció, aprendràs com donar d'alta, donar de baixa i modificar llibres a través de l'aplicació.</p>
+      <p>També aprendràs com buscar i consultar informació relativa als llibres emmagatzemats.</p>
+      <img src="C_Opcions.PNG" alt="Pantalla de les opcions dels Llibres" width="850" height="300">
+      <p></p>
+      <hr size="2px" color="white" />
+      <p></p>
+      <h2>Alta d'un llibre</h2>
+      <p>En aquesta foto que veiem a sota podem veure com és la pantalla per a donar d'alta un llibre.</p>
+      <img src="L_Alta.PNG" alt="Pantalla d'alta dels llibres" width="550" height="500">
+      <p>Podem veure com hem d'omplir els camps amb les dades que ens demana, és a dir, al camp d'ISBN haurem d'indicar l'ISBN del llibre que vulguem afegir, al camp del nom haurem d'afegir el nom del llibre en qüestió...</p>
+      <p>Si deixem algun camp en blanc, no ens deixarà afegir el llibre.</p>
+      <p></p>
+      <hr size="2px" color="white" />
+      <p></p>
+      <h2>Baixa d'un llibre</h2>
+      <p>En aquesta foto que veiem a sota podem veure com és la pantalla per a donar de baixa un llibre.</p>
+      <img src="L_Baixa.PNG" alt="Pantalla de baixa dels llibres" width="550" height="150">
+      <p>En aquesta pantalla podem veure com hem d'indicar quin és l'ISBN per a eliminar un llibre.</p>
+      <p>Si no afegim cap ISBN al camp no eliminarà cap llibre.</p>
+      <p></p>
+      <hr size="2px" color="white" />
+      <p></p>
+      <h2>Modificació d'un llibre</h2>
+      <p>En aquesta foto que veiem a sota podem veure com és la pantalla per a modificar la informació d'un llibre.</p>
+      <img src="L_Modificacio.PNG" alt="Pantalla de modificació dels llibres" width="550" height="500">
+      <p>En aquesta pantalla podem veure com podem modificar la informació que tenim sobre un llibre.</p>
+      <p>El funcionament és el següent: has d'indicar l'ISBN del llibre el qual vols modificar, sota seu quin és el nou ISBN, i sota tota la nova informació, com nom del llibre, estok, preu...</p>
+      <p>Si no omplim tots els camps de la modificació, no ens deixarà modificar el llibre.</p>
+      <p></p>
+      <hr size="5px" color="white" />
+      <p></p>
+    </section>
+    <section id="clients">
+      <h2>Clients</h2>
+      <p>Aquí descobriràs com gestionar els clients, incloent-hi les tasques d'alta, baixa i modificació de dades de clients.</p>
+      <p>També aprendràs a consultar la informació relacionada amb els clients existents.</p>
+      <img src="C_Opcions.PNG" alt="Pantalla de les opcions dels clients" width="850" height="300">
+      <p></p>
+      <hr size="2px" color="white" />
+      <p></p>
+      <h2>Alta d'un Client</h2>
+      <p>En aquesta foto que veiem a sota podem veure com és la pantalla per a donar d'alta un client al sistema.</p>
+      <img src="C_Alta.PNG" alt="Pantalla d'alta dels Clients" width="700" height="300">
+      <p>Podem veure com hem d'omplir els camps amb les dades que ens demana, és a dir, al camp de DNI haurem d'indicar el DNI del client que vulguem afegir, al camp del nom haurem d'afegir el nom del client en qüestió...</p>
+      <p>Si deixem algun camp en blanc, no ens deixarà afegir el client.</p>
+      <p></p>
+      <hr size="2px" color="white"/>
+      <p></p>
+      <h2>Baixa d'un client</h2>
+      <p>En aquesta foto que veiem a sota podem veure com és la pantalla per a donar de baixa un client.</p>
+      <img src="C_Baixa.PNG" alt="Pantalla de baixa dels clients" width="600" height="250">
+      <p>En aquesta pantalla podem veure com hem d'indicar quin és el DNI del client que volem donar de baixa del sistema.</p>
+      <p>Si no afegim el DNI al camp no eliminarà cap client.</p>
+      <p></p>
+      <hr size="2px" color="white" />
+      <p></p>
+      <h2>Modificació d'un client</h2>
+      <p>En aquesta foto que veiem a sota podem veure com és la pantalla per a modificar la informació d'un client.</p>
+      <img src="C_Modificacio.PNG" alt="Pantalla de modificació dels clients" width="550" height="250">
+      <p>En aquesta pantalla podem veure com podem modificar la informació que tenim sobre un client.</p>
+      <p>El funcionament és el següent: has d'indicar el DNI del client el qual vols modificar, sota seu quin és el nou DNI, i sota tota la nova informació, com el nou nom, cognom, direcció...</p>
+      <p>Si no omplim tots els camps de la modificació, no ens deixarà modificar el client.</p>
+      <p></p>
+      <hr size="5px" color="white" />
+      <p></p>
+    </section>
+
+    <section id="vendes">
+      <h2>Vendes</h2>
+      <p>En aquesta secció, exploraràs com crear noves vendes utilitzant l'aplicació.</p>
+      <img src="V_Opcions.PNG" alt="Pantalla per a crear vendes" width="500" height="350">
+      <p>En aquesta foto, podem veure com és la interfície de crear vendes. A la part superior podem veure que hem d'indicar el DNI del client el qual fa la comanda i a la seva dreta el dia d'avui.</p>
+      <p>Sota a la part de l'esquerra podem veure una taula que serà on s'aniran afegint els llibres els quals afegim a la comanda del client, i a la seva dreta tres botons: Afegir llibre, Enviar, Enrere</p>
+      <li><b>Afegir llibre:</b> En aquest apartat ens apareixerà un "pop-up" que ens demanarà l'ISBN del llibre que vulguem afegir a la comanda del client i quantes unitats volem d'aquell llibre</li>
+      <li><b>Enviar:</b> Un cop tinguem totes les dades introduïdes si li donem a aquest botó crearem la venda.</li>
+      <li><b>Enrere:</b> Ens retorna a la pantalla on veurem totes les opcions</li>
+      <p></p>
+      <hr size="5px" color="white" />
+      <p></p>
+    </section>
+    
+    <section id="consulta">
+      <h2>Consulta</h2>
+      <p>Finalment, aquesta secció et guiarà sobre com realitzar consultes específiques per obtenir informació detallada sobre llibres, clients i vendes emmagatzemats.</p>
+      <img src="Con_Opcions.PNG" alt="Pantalla on veiem les opcions per a consultar dades" width="650" height="350">
+      <p>En aquesta foto de damunt podem veure com és el menú per a consultar les dades tant de llibres, clients com vendes.</p>
+      <img src="Con_Llibres.PNG" alt="Dades de Llibres consultades" width="350" height="500">
+      <p>Aquí podem veure un exemple de com quedaria la consulta d'un llibre, amb els botons de la part inferior podem, navegar al primer o al ultim llibre, passar d'un en un, o tornar a la pantalla anterior.</p>
+      <img src="Con_Clients.PNG" alt="Dades de Clients consultades" width="350" height="500">
+      <p>En aquesta captura podem veure un exemple de com quedaria la consulta d'un client, amb els botons de la part inferior podem, navegar al primer o al ultim client, passar d'un en un, o tornar a la pantalla anterior.</p>
+      <img src="Con_Venda.PNG" alt="Dades de Vendes consultades" width="350" height="500">
+      <p>En la imatge superior podem veure un exemple de com quedaria la consulta d'una venda, amb els botons de la part inferior podem, navegar a la primera o a la ultima venda, passar d'una en una, o tornar a la pantalla anterior.</p>
+    </section>
+
+  </main>
+</body>
+</html>

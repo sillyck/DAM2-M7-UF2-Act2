@@ -1,0 +1,15 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=Projecte2.chm
+Contents file=Table of Contents.hhc
+Default Window=Project
+Display compile progress=No
+Index file=Index.hhk
+Language=0xc0a Español (España, internacional)
+
+[WINDOWS]
+Project=,"Table of Contents.hhc","Index.hhk",,,,,,,0x2120,,0x304e,,,,,,,,0
+
+
+[INFOTYPES]
+

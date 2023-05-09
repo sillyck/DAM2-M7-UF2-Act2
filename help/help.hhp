@@ -1,0 +1,19 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=help.chm
+Default Window=principal
+Default topic=..\..\..\..\..\a saber que estic fent\cositasHTM.htm
+Display compile progress=No
+Language=0xc0a Español (España, internacional)
+Title=Descripcio i contingut
+
+[WINDOWS]
+principal=,,,,,,,,,0x2000,,0x304e,[810,442,1109,638],,,,,,,0
+
+
+[FILES]
+..\..\..\..\..\a saber que estic fent\cositasHTM.htm
+..\..\..\..\..\a saber que estic fent\HTML2.htm
+
+[INFOTYPES]
+

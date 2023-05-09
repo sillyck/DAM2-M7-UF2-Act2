@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Ventes">
+		<param name="Local" value="html\Ventes.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Clients">
+		<param name="Local" value="html\AltaClient.html">
+		<param name="Local" value="html\baixaClient.html">
+		<param name="Local" value="html\modificacioClient.html">
+		<param name="Local" value="html\IntroClients.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Llibres">
+		<param name="Local" value="html\AltaLlibre.html">
+		<param name="Local" value="html\BaixaLlibre.html">
+		<param name="Local" value="html\modificacioLlibre.html">
+		<param name="Local" value="html\Llibres.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Consultes">
+		<param name="Local" value="html\consultes.html">
+		</OBJECT>
+</UL>
+</BODY></HTML>
